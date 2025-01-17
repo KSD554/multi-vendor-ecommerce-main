@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../Styles/Style";
-import Logo from "../../Assets/logo.png";
+import Logo from "../../assets/logo.png";
 import {
   AiOutlineHeart,
   AiOutlineSearch,
