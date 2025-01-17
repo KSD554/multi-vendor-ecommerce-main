@@ -1,19 +1,19 @@
 // navigation Data
 export const navItems = [
   {
-    title: "Home",
+    title: "Accueil",
     url: "/",
   },
   {
-    title: "Best Selling",
+    title: "Meilleures ventes",
     url: "/best-selling",
   },
   {
-    title: "Products",
+    title: "Produits",
     url: "/products",
   },
   {
-    title: "Events",
+    title: "Événements",
     url: "/events",
   },
   {
@@ -22,12 +22,12 @@ export const navItems = [
   },
 ];
 
-// branding data
+// données de branding
 export const brandingData = [
   {
     id: 1,
-    title: "Free Shipping",
-    Description: "From all orders over 100$",
+    title: "Livraison gratuite",
+    Description: "À partir de toutes les commandes de plus de 60 000 FCFA",
     icon: (
       <svg
         width="36"
@@ -70,8 +70,8 @@ export const brandingData = [
   },
   {
     id: 2,
-    title: "Daily Surprise Offers",
-    Description: "Save up to 25% off",
+    title: "Offres surprises quotidiennes",
+    Description: "Économisez jusqu'à 25 %",
     icon: (
       <svg
         width="32"
@@ -95,8 +95,8 @@ export const brandingData = [
   },
   {
     id: 4,
-    title: "Affortable Prices",
-    Description: "Get Factory direct price",
+    title: "Prix abordables",
+    Description: "Obtenez des prix directs d'usine",
     icon: (
       <svg
         width="32"
@@ -136,8 +136,8 @@ export const brandingData = [
   },
   {
     id: 5,
-    title: "Secure Payments",
-    Description: "100% protected payments",
+    title: "Paiements sécurisés",
+    Description: "Paiements 100 % protégés",
     icon: (
       <svg
         width="32"
