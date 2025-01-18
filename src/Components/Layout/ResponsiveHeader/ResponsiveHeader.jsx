@@ -98,8 +98,8 @@ const ResponsiveHeader = ({
                   className=" w-full py-2 rounded border border-[#3957db] focus:outline-none pl-2"
                   value={searchTerm}
                   onChange={handleSearch}
-                  placeholder="Search product..."
-                />
+                  placeholder="Rechercher un produit..."
+                  />
                 <AiOutlineSearch
                   size={30}
                   color="#333"
@@ -141,7 +141,7 @@ const ResponsiveHeader = ({
               <div className={`${styles.button} !h-11 !rounded-[4px] ml-6`}>
                 <Link to={isSeller ? "/shop/:id" : "/signup-seller"}>
                   <h1 className=" text-white flex items-center justify-center">
-                    {isSeller ? "Go Dashboard" : "Become Seller"}
+                  {isSeller ? "Tableau de bord" : "Vendre"}
                     <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
@@ -169,12 +169,12 @@ const ResponsiveHeader = ({
                     <Link
                       to="/login"
                       className="text-[#333] font-[600] text-[18px] ">
-                      Login /
+                      Connexion /
                     </Link>
                     <Link
                       to="/sign-up"
                       className="text-[#333] font-[600] text-[18px] pl-1">
-                      SignUp
+                      Inscription
                     </Link>
                   </>
                 )}

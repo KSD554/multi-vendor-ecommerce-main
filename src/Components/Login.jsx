@@ -19,10 +19,10 @@ const Login = () => {
     const localStoragePassword = JSON.parse(localStorage.getItem("password"));
 
     if (email === localStorageEmail && password === localStoragePassword) {
-      toast.success("login success");
+      toast.success("Connexion réussie");
       navigate("/");
     } else {
-      toast.error("Please provide the correct information");
+      toast.error("Veuillez fournir les informations correctes");
     }
   };
 
@@ -30,7 +30,7 @@ const Login = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Login to your account
+        Connectez-vous
         </h2>
       </div>
       <div className="mt-8 mx-auto w-[90%] 800px:w-[45%]">
@@ -40,7 +40,7 @@ const Login = () => {
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700">
-                Email address
+                Adresse e-mail
               </label>
               <div className="mt-1">
                 <input
@@ -58,7 +58,7 @@ const Login = () => {
               <label
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700">
-                Password
+                Mot de passe
               </label>
               <div className="mt-1 relative">
                 <input
@@ -96,14 +96,14 @@ const Login = () => {
                 <label
                   htmlFor="remember-me"
                   className="ml-2 block text-sm text-gray-900">
-                  Remember me
+                  Se souvenir de moi
                 </label>
               </div>
               <div className="text-sm">
                 <Link
                   to="/forget-password"
                   className="font-medium text-blue-600 hover:text-blue-500">
-                  Forgot your password?
+                  Mot de passe oublié ?
                 </Link>
               </div>
             </div>
@@ -111,13 +111,13 @@ const Login = () => {
               <button
                 type="submit"
                 className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-                Submit
+                Soumettre
               </button>
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
-              <h4>Not have any account?</h4>
-              <Link to="/sign-up" className="text-blue-600 pl-2">
-                Sign Up
+            <h4>Vous n'avez pas de compte ?</h4>
+            <Link to="/sign-up" className="text-blue-600 pl-2">
+            S'inscrire
               </Link>
             </div>
           </form>

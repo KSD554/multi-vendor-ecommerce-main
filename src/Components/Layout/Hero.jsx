@@ -13,22 +13,19 @@ const Hero = () => {
         backgroundPosition: "center",
       }}>
       <div className={`${styles.section} w-[90%] 800px:w-[60%] `}>
-        <h4 className="text-[34px] 800px:text-[60px] font-[600] capitalize text-[#3d3a3a] leading-[1.2] ">
-          Best Collection for <br />
-          home decoration
-        </h4>
+      <h4 className="text-[34px] 800px:text-[60px] font-[600] capitalize text-[#3d3a3a] leading-[1.2] ">
+  Meilleure collection pour <br />
+  la décoration intérieure
+</h4>
 
         <p className="pt-5 font-[400] font-Poppins text-[16px] text-[#000000ba]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-          voluptate, illum ratione, facere, eveniet nostrum laborum adipisci
-          repellendus praesentium fugiat voluptatibus hic natus soluta
-          recusandae labore nisi. Totam, numquam sint.
+        Bienvenue sur notre plateforme de e-commerce ! Créez un compte pour accéder à une large gamme de produits proposés par différents vendeurs. Vous pouvez facilement parcourir, comparer et acheter des articles, tout en bénéficiant de promotions exclusives. Inscrivez-vous maintenant et profitez de notre expérience d'achat en ligne rapide et sécurisée.
         </p>
 
         <Link to={"/products"} className="inline-block">
           <div className={`${styles.button} mt-6`}>
             <span className="text-white font-Poppins text-[18px]">
-              Shop Now
+            Achetez maintenant
             </span>
           </div>
         </Link>

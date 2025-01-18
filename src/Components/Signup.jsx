@@ -30,10 +30,12 @@ const Signup = () => {
 
     if (email === userEmailFromLocalstorage) {
       toast.error(
-        `The "${email}" already registered, Please try to different email!`
+        `L "${email}" est déjà enregistré, veuillez essayer un autre email !`
       );
     } else {
-      toast.success("Your account successfully created, Now login!");
+      toast.success(
+        "Votre compte a été créé avec succès, connectez-vous maintenant !"
+      );
 
       // local storage data
       localStorage.setItem("email", JSON.stringify(email));
@@ -48,7 +50,7 @@ const Signup = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Register as a new user
+          S'inscrire en tant que nouvel utilisateur
         </h2>
       </div>
       <div className="mt-8 mx-auto w-[90%] 800px:w-[45%]">
@@ -57,8 +59,9 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700">
-                Full Name
+                className="block text-sm font-medium text-gray-700"
+              >
+                Nom complet
               </label>
               <div className="mt-1">
                 <input
@@ -75,8 +78,9 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700">
-                Email address
+                className="block text-sm font-medium text-gray-700"
+              >
+                Adresse e-mail
               </label>
               <div className="mt-1">
                 <input
@@ -93,8 +97,9 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700">
-                Password
+                className="block text-sm font-medium text-gray-700"
+              >
+                Mot de passe
               </label>
               <div className="mt-1 relative">
                 <input
@@ -136,8 +141,9 @@ const Signup = () => {
 
               <label
                 htmlFor="file-input"
-                className="ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
-                <span>Upload file</span>
+                className="ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+              >
+                <span>Télécharger</span>
                 <input
                   type="file"
                   name="avatar"
@@ -151,8 +157,9 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-                Submit
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+              >
+                Envoyer
               </button>
 
               {/* toast message */}
@@ -170,9 +177,11 @@ const Signup = () => {
               />
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
-              <h4>Already have an account?</h4>
+            <h4>Vous avez déjà un compte ?</h4>
+
               <Link to="/login" className="text-blue-600 pl-2">
-                Sign in
+                
+Se connecter
               </Link>
             </div>
           </form>

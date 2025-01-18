@@ -83,8 +83,8 @@ const Header = ({ activeHeading }) => {
               className=" w-full py-2 rounded border border-[#3957db] focus:outline-none pl-2"
               value={searchTerm}
               onChange={handleSearch}
-              placeholder="Search product..."
-            />
+              placeholder="Rechercher un produit..."
+              />
             <AiOutlineSearch
               size={30}
               color="#333"
@@ -122,7 +122,7 @@ const Header = ({ activeHeading }) => {
           <div className={`${styles.button}`}>
             <Link to={isSeller ? "/shop/:id" : "/signup-seller"}>
               <h1 className=" text-white flex items-center justify-center">
-                {isSeller ? "Go Dashboard" : "Become Seller"}
+              {isSeller ? "Tableau de bord" : "Vendre"}
                 <IoIosArrowForward className="ml-1" />
               </h1>
             </Link>
@@ -161,7 +161,7 @@ const Header = ({ activeHeading }) => {
               className="absolute top-3 flex items-center left-2"
             />
             <button className="w-full h-[100%] flex items-center justify-between font-sans pl-10 bg-white text-lg font-[500] rounded-t-md select-none">
-              All Categories
+            Catégories
             </button>
             <IoIosArrowDown
               size={20}
