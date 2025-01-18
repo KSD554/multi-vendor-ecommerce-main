@@ -25,7 +25,7 @@ const Hero = () => {
         <Link to={"/products"} className="inline-block">
           <div className={`${styles.button} mt-6`}>
             <span className="text-white font-Poppins text-[18px]">
-            Achetez maintenant
+            Achetez
             </span>
           </div>
         </Link>
